@@ -49,9 +49,9 @@ go install # installs into $GOPATH/bin
 which greetings-gen # just check it's there
 ```
 
-## Generate does not work
+## Binary which calls out to x/tools/loader does not work
 
-_Note:_ before running make sure that `github.com/twitchtv/twirp` does not exist in your `$GOPATH` (Twirp is used as some arbitrary dependency that this repro's package needs—I don't believe that Twirp has anything to do with this):
+_Note:_ before running the below make sure that `github.com/twitchtv/twirp` does not exist in your `$GOPATH` (Twirp is used as some arbitrary dependency that this repro's package needs—I don't believe that Twirp has anything to do with this):
 
 ```
 $ ls $GOPATH/src/github.com/twitchtv
