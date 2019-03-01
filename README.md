@@ -1,4 +1,6 @@
-# Repro when using Go modules for potential discrepancy between go generate and running the generate command directly
+# Repro when using Go modules it seems to look for a package in GOPATH for some reason
+
+I don't know if this is a Go modules issue or a `golang.org/x/tools/go/loader` issue, or neither.
 
 ## What env am I using?
 
